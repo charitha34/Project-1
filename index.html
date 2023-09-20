@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitha Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Caveat&family=Dancing+Script&family=Roboto+Mono&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+    body{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        color:white;
+        margin:0px;
+        padding:0px;
+        background:url('img/img1.jpg');
+    }
+    .left{
+        line-height: 0px;
+        position:absolute;
+        left:34px;/* to make it display right position should be set to absolute,and its dimesnsions in top and left should be givens*/
+        top:20px;
+        display:inline-block;
+    }
+    .left div{
+        text-align: center;
+        line-height: 0px;
+        font-size: 14px;
+    }
+    .left img{
+        line-height: 0px;
+        width:30px;
+        filter:invert(100%);
+        margin:auto;
+        display: block;
+        padding:0px 0px 14px 0px;
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        color:white;
+        display:inline-block;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration:none ;
+        padding:8px;
+        font-size: 17px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color:grey;
+
+    }
+    .mid{
+        display:block;
+        width: 50%;
+        margin:20px auto; /* to make it display in middle display should be set to block,width should be given,margin should be set to auto */
+    
+    }
+    .right{
+        position:absolute;
+        right:34px;
+        top:20px;
+        display:inline-block;/* to make it display right position should be set to absolute,and its dimesnsions in top and right should be givens*/
+
+    }
+    .btn{
+        margin:0px 9px;
+        background-color: black;
+        color: white;
+        padding:3px;
+        border:2px solid grey;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    .btn:hover{
+        background-color: rgb(34, 33, 33);
+    }
+    .container{
+        border: solid 2px white;
+        color: white;
+        width:30%;
+        padding:20px;
+        margin: 80px 40px  20px 40px ;
+        background-color: black;
+        display:block;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width:85%;
+        font-size: 18px;
+        padding:6px;
+        border: 2px solid black;
+        margin:10px;
+        border-radius: 8px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        cursor: pointer;
+    }
+    .container h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width:65%;
+        margin:10px;
+        width:88%;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="left">
+            <!-- left box for logo -->
+        <img src="img/img4.png" alt="">
+        <div>Charitha Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="active">About us</a></li>
+                    <li><a href="#" class="active">Fitness Calculator</a></li>
+                    <li><a href="#" class="active">Contact us</a></li> 
+                </ul>
+            </div> 
+
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
